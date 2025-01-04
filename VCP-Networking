@@ -34,3 +34,68 @@ Important Concepts for AWS VPC Networking
       Types:
       Gateway Endpoint: For S3 and DynamoDB.
       Interface Endpoint: Uses Elastic Network Interfaces (ENIs).
+11. VPC Flow Logs
+      Capture network traffic logs for analysis.
+      Useful for troubleshooting and security audits.
+12. Site-to-Site VPN
+      Securely connects an on-premises data center to your VPC over the internet.
+      Requires a Virtual Private Gateway and a Customer Gateway.
+13. Direct Connect (DX)
+      Dedicated network connection between your on-premises data center and AWS.
+      Offers higher bandwidth and lower latency compared to a VPN.
+14. Transit Gateway
+      Central hub for connecting multiple VPCs and on-premises networks.
+      Simplifies complex network architectures.
+15. IPv6 in VPC
+      VPCs support both IPv4 and IPv6.
+      IPv6 addresses are globally unique and routable.
+16. Egress-Only Internet Gateway
+      Provides IPv6 resources in a VPC with outbound-only internet access.
+
+Exam Tips
+            Understand Networking Components:
+            
+            Know the purpose and differences between IGW, NAT Gateway, NAT Instance, and Egress-only IGW.
+            Familiarize yourself with route table configurations and CIDR block rules.
+            Practice Subnetting:
+            
+            Understand how to divide a CIDR block into subnets.
+            Know the implications of assigning public/private subnets.
+            VPC Connectivity:
+            
+            Study VPC Peering, Transit Gateway, and VPN configurations.
+            Understand when to use Direct Connect vs. VPN.
+            Security Best Practices:
+            
+            Always secure private instances with security groups and bastion hosts.
+            Learn the differences between stateful (Security Groups) and stateless (NACLs).
+            VPC Endpoints:
+            
+            Know the difference between Gateway and Interface endpoints and their use cases.
+            Hands-On Labs:
+
+            Practice creating a VPC, setting up subnets, NAT Gateway, and Security Groups.
+            Configure a site-to-site VPN and test connectivity.
+            Troubleshooting:
+            
+            Use VPC Flow Logs and CloudWatch for diagnosing networking issues.
+            Networking Costs:
+            Understand data transfer costs between AZs, VPCs, and on-premises networks.
+
+
+ Key Hands-On Labs to Perform
+            Create a VPC with public and private subnets.
+            Set up an Internet Gateway and NAT Gateway.
+            Configure Security Groups and NACLs for various use cases.
+            Test VPC Peering and Transit Gateway connectivity.
+            Use a Bastion Host to access private resources.
+            Configure and analyze VPC Flow Logs.
+Quick Reference for the Exam
+            Default VPC: Fully managed; all subnets are public.
+            Custom VPC: Greater control over resources and networking.
+            NAT Gateway vs. NAT Instance: Use NAT Gateway for scalability and ease of management.
+            Security Groups: Stateful; specific to instances.
+            NACLs: Stateless; applied to subnets.
+            VPC Peering: No transitive peering; must configure route tables manually.
+            Transit Gateway: Simplifies VPC-to-VPC and on-premises connectivity.
+            Direct Connect: Use for high-bandwidth, low-latency connections to AWS.
