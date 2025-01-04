@@ -1,0 +1,36 @@
+Important Concepts for AWS VPC Networking
+1. CIDR, Private vs. Public IP
+      CIDR (Classless Inter-Domain Routing):
+      Defines the IP address range for your VPC and subnets (e.g., 10.0.0.0/16).
+      Smaller subnets can be created from the VPC CIDR block (e.g., 10.0.1.0/24).
+      Public IP: Accessible over the internet.
+      Private IP: Internal communication only; not internet-accessible.
+2. Default VPC
+      Comes pre-configured in each region.
+      All subnets in the default VPC are public and have an internet gateway attached.
+3. Custom VPC
+      Allows you to configure subnets, route tables, gateways, and security rules.
+      Use when you need precise control over networking.
+4. Subnets
+      Public Subnet: Traffic routed to the internet gateway.
+      Private Subnet: No direct internet access; uses NAT Gateway/Instance for outbound traffic.
+5. Internet Gateway & Route Tables
+      Internet Gateway (IGW): Enables internet access for resources in a public subnet.
+      Route Tables: Define where network traffic is directed (e.g., to IGW, NAT, or VPC Peering).
+6. Bastion Hosts
+      Used to securely access private instances in a private subnet via SSH/RDP.
+      Placed in a public subnet.
+7. NAT (Network Address Translation)
+      NAT Gateway: Highly available and managed by AWS; for outbound traffic from private subnets.
+      NAT Instance: EC2 instance acting as a NAT device; requires manual management.
+8. Security Groups and NACLs
+      Security Groups: Instance-level firewall; stateful (allows return traffic by default).
+      NACLs (Network ACLs): Subnet-level firewall; stateless (return traffic must be explicitly allowed).
+9. VPC Peering
+      Connects two VPCs privately using private IPs.
+      Peered VPCs must not have overlapping CIDR blocks.
+10. VPC Endpoints
+      Private connection to AWS services (e.g., S3, DynamoDB) without using the internet.
+      Types:
+      Gateway Endpoint: For S3 and DynamoDB.
+      Interface Endpoint: Uses Elastic Network Interfaces (ENIs).
