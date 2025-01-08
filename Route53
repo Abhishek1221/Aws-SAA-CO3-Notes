@@ -1,9 +1,12 @@
 Route 53 Features to Remember
+Paid 50$ per hosted zone
 1. Record Types
     A Record: Maps domain to IPv4 address.
     CNAME: Maps a domain to another domain (e.g., alias.example.com → example.com).
     Alias Record: Similar to CNAME but integrates with AWS resources (e.g., ELB, CloudFront).
 2. TTL (Time-to-Live)
+    Records will be cached for ttl seconds ex ttl 300 secs
+    ex if you chnage server you will get access to new server after TTL time is over
     Controls how long DNS resolvers cache a record.
     Lower TTL: Faster propagation for changes, but more requests.
     Higher TTL: Reduces DNS query load, slower updates.
