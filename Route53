@@ -1,0 +1,26 @@
+Route 53 Features to Remember
+1. Record Types
+    A Record: Maps domain to IPv4 address.
+    CNAME: Maps a domain to another domain (e.g., alias.example.com → example.com).
+    Alias Record: Similar to CNAME but integrates with AWS resources (e.g., ELB, CloudFront).
+2. TTL (Time-to-Live)
+    Controls how long DNS resolvers cache a record.
+    Lower TTL: Faster propagation for changes, but more requests.
+    Higher TTL: Reduces DNS query load, slower updates.
+3. Routing Policies
+Policy	Description	Example Use Case
+      Simple	Default policy, one record per domain name.	Single server hosting a website.
+      Weighted	Divides traffic based on assigned weights.	Canary deployments, load balancing.
+      Latency	Routes traffic to the region with the lowest latency.	Global apps with regional servers.
+      Failover	Routes traffic to a healthy endpoint when the primary endpoint fails.	High availability for critical apps.
+          Geolocation	Routes based on the user's location.	Localized content or compliance needs.
+    Geoproximity	Routes based on proximity and bias (expanding/reducing service areas).	Region-specific optimizations.
+    Multi-value	Returns multiple healthy records; supports DNS-based load balancing.	Load balancing across multiple servers.
+    IP-Based	Routes traffic based on user IPs.	Tailored IP-based routing solutions.
+4. Health Checks
+    Monitor endpoint health (HTTP, HTTPS, or TCP).
+    Automatic failover when an endpoint is unhealthy.
+    Health checks include CloudWatch metrics integration.
+5. Domain Registration
+    Supports domain registration directly in Route 53.
+    Manage DNS records for AWS and third-party domains.
