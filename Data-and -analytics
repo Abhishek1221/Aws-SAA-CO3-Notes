@@ -1,0 +1,39 @@
+Amazon Athena
+      Serverless query service for analyzing data in S3 using SQL.
+      Features: Pay-per-query, integrates with AWS Glue for schema management.
+      Use Case: Ad-hoc queries on large datasets stored in S3.
+Amazon Redshift
+      Fully managed, petabyte-scale data warehouse.
+      Features: Columnar storage, data compression, integration with BI tools.
+      Use Case: Data warehousing, OLAP (Online Analytical Processing).
+Amazon OpenSearch (formerly Elasticsearch Service)
+      Managed service for search, log analysis, and visualization.
+      Features: Full-text search, monitoring dashboards (Kibana), scalability.
+      Use Case: Search engines, log analytics.
+Amazon EMR (Elastic MapReduce)
+      Managed Hadoop, Spark, and Presto clusters.
+      Features: Big data processing, cost optimization with Spot instances.
+      Use Case: Batch processing, data transformation, analytics.
+Amazon QuickSight
+      Business intelligence (BI) and visualization tool.
+      Features: Integration with AWS data sources, predictive analytics, natural language querying.
+      Use Case: Creating dashboards and visualizations.
+AWS Glue
+      Managed ETL (Extract, Transform, Load) service.
+      Features: Data cataloging, integration with Athena, supports Python/Scala scripts.
+      Use Case: Data preparation, ETL pipelines.
+AWS Lake Formation
+      Simplifies the creation of secure data lakes on S3.
+      Features: Centralized access control, automated schema inference.
+      Use Case: Building and managing data lakes.
+Amazon Managed Service for Apache Flink
+      Fully managed service for real-time data processing.
+      Features: Stream processing, low-latency analytics.
+      Use Case: IoT, event-driven architectures.
+Amazon MSK (Managed Streaming for Apache Kafka)
+      Managed Apache Kafka service for real-time data streaming.
+      Features: Automated provisioning, patching, scaling.
+      Use Case: Real-time data pipelines, event-driven systems.
+Big Data Ingestion Pipeline
+Use cases involve tools like Kinesis, MSK, or DataSync for ingesting large volumes of data into S3, Redshift, or EMR.
+Key Points: Ensure scalability, durability, and cost efficiency.
