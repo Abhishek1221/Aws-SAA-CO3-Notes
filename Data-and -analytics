@@ -37,3 +37,32 @@ Amazon MSK (Managed Streaming for Apache Kafka)
 Big Data Ingestion Pipeline
 Use cases involve tools like Kinesis, MSK, or DataSync for ingesting large volumes of data into S3, Redshift, or EMR.
 Key Points: Ensure scalability, durability, and cost efficiency.
+
+
+Athena
+            How does Athena integrate with AWS Glue?
+            What are the cost considerations when using Athena?
+Redshift
+            How does Redshift handle massive datasets for analytics?
+            Explain the role of Redshift Spectrum.
+OpenSearch
+            What are typical use cases for OpenSearch?
+            How do you secure an OpenSearch cluster?
+EMR
+            What advantages does EMR provide over setting up a Hadoop cluster manually?
+            How does EMR handle cost optimization?
+QuickSight
+            What differentiates QuickSight from traditional BI tools?
+            How can you enable predictive analytics in QuickSight?
+Glue
+            What are the key components of AWS Glue?
+            How do Glue crawlers simplify schema inference?
+Lake Formation
+            How does Lake Formation centralize access control?
+            What are its advantages over manual data lake setup?
+Flink
+            When would you use Flink over Kinesis for streaming?
+            What is a common architecture for Apache Flink on AWS?
+MSK
+            How does MSK simplify Kafka management?
+            What are the durability guarantees of MSK?
