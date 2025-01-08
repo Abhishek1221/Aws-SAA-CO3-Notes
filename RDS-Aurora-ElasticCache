@@ -26,3 +26,27 @@ Amazon ElastiCache
       Ports to Know
       RDS: Default database ports (e.g., MySQL: 3306, PostgreSQL: 5432, SQL Server: 1433).
       ElastiCache: Redis (6379), Memcached (11211).
+
+
+Interview Questions for AWS Database Services
+Amazon RDS
+            What are the differences between RDS Read Replicas and Multi-AZ deployments?
+            How does Amazon RDS handle backups, and what is the default retention period?
+            Explain how RDS integrates with IAM for authentication.
+            Can you explain how RDS security features, such as encryption and VPC isolation, work?
+            When would you choose RDS Custom over standard RDS?
+Amazon Aurora
+            What are the key advantages of Amazon Aurora compared to traditional RDS engines?
+            How does Aurora Serverless scale with workload?
+            What is an Aurora Global Database, and when would you use it?
+            How does Amazon Aurora ensure high availability and durability?
+            Amazon ElastiCache
+            What are the primary differences between Redis and Memcached in ElastiCache?
+            How does ElastiCache improve application performance?
+            Can you explain the failover process for ElastiCache in a multi-AZ setup?
+            When would you choose ElastiCache over RDS or DynamoDB?
+General
+            What factors would you consider when choosing a database engine in AWS?
+            How do you ensure cost optimization when using RDS or Aurora?
+            Explain how connection pooling with RDS Proxy benefits database performance.
+            What monitoring tools can you use with AWS database services?
