@@ -1,0 +1,28 @@
+Amazon RDS (Relational Database Service)
+      Managed relational database service supporting multiple engines: MySQL, PostgreSQL, MariaDB, Oracle, and SQL Server.
+      Multi-AZ Deployments: Ensures high availability with automatic failover.
+      Read Replicas: Improve read performance by creating read-only copies of databases.
+      Automated backups, snapshots, and manual backups for data recovery.
+      Integration with IAM, CloudWatch, and KMS for enhanced security and monitoring.
+RDS Custom
+      Tailored for specialized workloads with specific configurations for Oracle and Microsoft SQL Server.
+      Amazon Aurora
+      High-performance relational database engine compatible with MySQL and PostgreSQL.
+      Aurora Serverless: Scales automatically based on usage.
+      Supports Global Databases for low-latency access across regions.
+      Fast failover and replication features ensure high availability.
+RDS Security
+      Encrypts data at rest and in transit using KMS.
+      VPC-based isolation for database instances.
+      Supports IAM authentication and database firewalls.
+RDS Proxy
+      Improves database performance by pooling and sharing database connections.
+      Ensures secure database access and integrates with AWS Secrets Manager.
+Amazon ElastiCache
+      Fully managed in-memory data store for caching.
+      Supports Redis and Memcached.
+      Used for low-latency data access and high-throughput applications.
+      Supports multi-AZ with failover, backups, and enhanced security.
+      Ports to Know
+      RDS: Default database ports (e.g., MySQL: 3306, PostgreSQL: 5432, SQL Server: 1433).
+      ElastiCache: Redis (6379), Memcached (11211).
