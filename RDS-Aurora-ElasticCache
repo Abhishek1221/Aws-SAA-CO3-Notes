@@ -26,6 +26,33 @@ Amazon ElastiCache
       Ports to Know
       RDS: Default database ports (e.g., MySQL: 3306, PostgreSQL: 5432, SQL Server: 1433).
       ElastiCache: Redis (6379), Memcached (11211).
+DynamoDB
+            Managed NoSQL key-value and document database.
+            Features: Scalability, durability, global tables, and DynamoDB Streams.
+            Use cases: E-commerce, gaming leaderboards, IoT applications.
+S3 (Simple Storage Service)
+            Object storage for unstructured data (not a traditional database).
+            Features: Scalability, durability, event triggers, and lifecycle management.
+            Use cases: Data lakes, backups, media storage.
+            DocumentDB
+            Managed NoSQL database for document-based workloads (compatible with MongoDB).
+            Features: JSON data model, high availability.
+            Use cases: Content management systems, cataloging.
+Neptune
+            Fully managed graph database service.
+            Features: Supports Gremlin and SPARQL queries.
+            Use cases: Social networks, fraud detection, recommendation engines.
+            Keyspaces (for Apache Cassandra)
+            Managed NoSQL database for Cassandra workloads.
+            Features: Compatibility with Cassandra query language (CQL).
+            Use cases: IoT, time-series data, large-scale distributed systems.
+QLDB (Quantum Ledger Database)
+            Immutable and cryptographically verifiable ledger database.
+            Use cases: Financial systems, supply chain, and blockchain-like applications.
+Timestream
+            Managed time-series database.
+            Features: Data retention policies, query optimizations for time-series data.
+            Use cases: IoT data, metrics, monitoring.
 
 
 Interview Questions for AWS Database Services
