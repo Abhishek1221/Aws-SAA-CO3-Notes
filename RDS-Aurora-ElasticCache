@@ -30,6 +30,14 @@ DynamoDB
             Managed NoSQL key-value and document database.
             Features: Scalability, durability, global tables, and DynamoDB Streams.
             Use cases: E-commerce, gaming leaderboards, IoT applications.
+DynamoDB DAX 
+            Dynamo DB acclerator across 3 AZ
+            Seamless caching for DynamoDB
+            Max Size of table is 400KB
+DynamoDB Steams
+            changes like create, update and delete is recorded in the steam changelogs then read by lamda
+            For CRR must use steams, 24 hrs retention
+            VPN endpoints available to access DynamoDB without internet 
 S3 (Simple Storage Service)
             Object storage for unstructured data (not a traditional database).
             Features: Scalability, durability, event triggers, and lifecycle management.
